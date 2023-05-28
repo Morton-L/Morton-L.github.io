@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>siteTitle</title>
+
+  <link href="https://r2.powerbyte.io/Static/OpenAI/ChatGPT/GatewayV1/loading.css" rel="stylesheet">
+</head>
+<body>
+<div id="loading">
+  <div id="loadingAnimation"></div>
+  <span id="loadingText"></span>
+</div>
+<div id="content" style="display:none;"></div>
+
+<script>
+  new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = 'https://r2.powerbyte.io/Static/OpenAI/ChatGPT/GatewayV1/content.js';
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  })
+          .catch((error) => {
+            console.error('加载脚本时出现错误:', error);
+          });
+</script>
+</body>
+</html>
