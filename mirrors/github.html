@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>GitHub 文件加速</title>
+
+    <link rel="stylesheet" href="../static/css/mirrors/github.com.css">
+</head>
+<body class="flex">
+    <header>
+        <h1 style="margin-bottom: 50px">
+            <img src="https://ae01.alicdn.com/kf/H2fc84859291347418b11091fe0e508b8v.png" alt="GitHub 文件加速" style="width: 1.5em;margin-right: .2em;vertical-align: bottom;">
+            GitHub 文件加速
+        </h1>
+    </header>
+    <main>
+        <form id="accelerate-form" action="./" method="get" style="padding-bottom: 40px" target="_blank" class="flex">
+            <label class="block" style="width: fit-content">
+                <input id="github-url" class="block url" name="q" type="text" placeholder="键入Github文件链接" pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob|raw|suites)|((?:raw|gist)\.(?:githubusercontent|github)\.com))\/.+$" required>
+            </label>
+            <input class="block btn" type="submit" value="下载">
+        </form>
+    </main>
+    <script src="../static/js/mirrors/github.com.js"></script>
+</body>
+</html>
